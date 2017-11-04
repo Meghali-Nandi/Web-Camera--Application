@@ -1,0 +1,31 @@
+<html>
+<head>
+
+  <script type="text/javascript" src="{{url_for('static',filename='jquery-3.2.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='mediafile.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='camtry.js')}}"></script>
+  
+ <link rel="stylesheet" href="{{url_for('static',filename='camtry.css')}}">
+ 
+  
+</head>
+
+<body>
+
+  <div id="container">
+
+    <form action="{{ url_for('index') }}" method="post">
+        <video id="gum" autoplay muted></video><br>
+        
+        Enter your name:  <input type="text" class="name">
+      </form>
+      <button id="record">Start Recording</button>
+      <button type="button" class="name-submit-btn">Submit</button>
+      
+     
+    
+
+    
+  </div>
+</body>
+</html>
